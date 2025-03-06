@@ -1,21 +1,13 @@
 const input = require('readline-sync');
 
-let name = input.question(" Enter name ");
+let word = input.question(" Enter word ");
 
-let lastName = input.question(" Enter last name ");
-
-console.log("Hello " + name + lastName);
+console.log("Great! " + word + " Is your word.");
 
 
 
-let question = input.question(" What is a value? ");
+let indexNumber = input.question(" Now pick an index number in your word. ");
 
-let questionTwo = input.question(" What is a data type? ");
+console.log(word[indexNumber]);
 
-let questionThree = input.question(" What is an operation? ");
 
-let questionFour = input.question(" What is a boolean? ");
-
-let questionFive = input.questionInt(" What is your age? ");
-
-console.log("Correct!" + question + questionTwo + questionThree + questionFour + questionFive);
